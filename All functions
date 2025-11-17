@@ -1,0 +1,76 @@
+def say_hello():
+    print("Hello World")
+
+def say_bye():
+    print("Goodbye World")
+    
+# A simple kilograms to ounces conversion program
+# It asks for a weight in kilograms (for example 10)
+# and converts it to ounces (352.74)
+
+def kilos_to_ounces():
+    kilos = float(input("Enter a weight in kilograms: "))
+    ounces = 35.274 * kilos
+    print("The weight in ounces is", ounces)
+
+def count():
+    for number in range(10):
+        print("Number is now: ", number)
+        
+def say_name():
+    print("Henry")
+    
+def say_hello_2():
+    print("Hello")
+    print("world.")
+    
+def dollars_to_pounds():
+    dollars = float(input("Enter an amount in dollars: "))
+    pounds = dollars / 1.35
+    print("The amount in pounds is", pounds)
+    
+def sum_and_difference():
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    print("The sum is", num1 + num2)
+    print("The difference is", num1 - num2)
+
+def change_counter():
+    one_pence = int(input("How many 1p coins do you have? "))
+    two_pence = int(input("How many 2p coins do you have? "))
+    five_pence = int(input("How many 5p coins do you have? "))
+
+    total = one_pence + two_pence * 2 + five_pence * 5
+    print("The total amount is", total, "pence")
+
+def ten_hellos():
+    for _ in range(10):
+        print("Hello World")
+
+def zoom_zoom():
+    number = int(input("Enter a number: "))
+    for i in range(1, number + 1):
+        print("zoom", i)
+
+def count_to():
+    number = int(input("Enter a number: "))
+    for i in range(1, number + 1):
+        print(i)
+
+        
+def count_from_to():
+    start = int(input("Enter the starting number: "))
+    end = int(input("Enter the ending number: "))
+    for i in range(start, end + 1):
+        print(i, end=" ")
+    print()
+
+
+def weights_table():
+    for kg in range(10, 101, 10):
+        print(kg, "kg =", kg * 35.274, "ounces")
+
+def future_value():
+    a = float(input("Initial amount: "))
+    for _ in range(int(input("Years: "))): a *= 1.035
+    print(round(a, 2))
