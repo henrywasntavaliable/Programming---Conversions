@@ -1,0 +1,4 @@
+def dollars_to_pounds():
+    dollars = float(input("Enter an amount in dollars: "))
+    pounds = dollars / 1.35
+    print("The amount in pounds is", pounds)
