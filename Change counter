@@ -1,0 +1,7 @@
+def change_counter():
+    one_pence = int(input("How many 1p coins do you have? "))
+    two_pence = int(input("How many 2p coins do you have? "))
+    five_pence = int(input("How many 5p coins do you have? "))
+
+    total = (one_pence * 1) + (two_pence * 2) + (five_pence * 5)
+    print("The total amount is", total, "pence")
